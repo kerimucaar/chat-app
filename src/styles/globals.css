@@ -1,0 +1,6 @@
+html,
+body {
+  font-size: 18px;
+  background: var(--chakra-colors-primaryBg) !important;
+  color: white !important;
+}

@@ -1,0 +1,7 @@
+.aside::-webkit-scrollbar {
+  width: 4px;
+}
+.aside::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-whiteAlpha-400);
+  border-radius: 20px;
+}

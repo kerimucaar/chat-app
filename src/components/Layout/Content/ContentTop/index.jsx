@@ -4,7 +4,7 @@ import ContentTopInfo from './ContentTopInfo';
 
 export default function ContentTop() {
   return (
-    <Flex justifyContent='space-between' alignItems='center' bgColor='primaryBg' px={4} h='12' shadow='lg'>
+    <Flex justifyContent='space-between' alignItems='center' bgColor='primaryBg' px={4} h='12'>
       <ContentTopInfo />
       <ContentTopActions />
     </Flex>

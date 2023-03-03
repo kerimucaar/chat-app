@@ -16,11 +16,9 @@ export default function AsideMessage(props) {
       borderRadius={15}
       cursor='pointer'
       transition='0.010s all ease-in'
+      className={props.active >= 0 ? styles.active : ''}
       _hover={{
         bgColor: '#70707040'
-      }}
-      _activeLink={{
-        color: 'red'
       }}
       onClick={onClick}
     >

@@ -5,18 +5,6 @@ const components = {
     baseStyle: {
       bgColor: 'transparent !important'
     }
-  }),
-
-  MenuList: defineStyleConfig({
-    baseStyle: {
-      bgColor: 'red !important'
-    }
-  }),
-
-  MenuItem: defineStyleConfig({
-    baseStyle: {
-      bgColor: 'red !important'
-    }
   })
 };
 

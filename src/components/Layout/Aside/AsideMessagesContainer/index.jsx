@@ -1,180 +1,11 @@
 import { Box } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import AsideMessage from './AsideMessage';
 
 const fakeMessages = [
   {
     owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
-      name: 'Kerim UÇAR',
-      photo: '/profiles/ku.jfif',
-      shortName: 'KU'
-    },
-    message: 'Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!Welcome to the App!',
-    date: new Date('28.02.2023')
-  },
-  {
-    owner: {
-      id: '100000000',
+      id: 100000000,
       name: 'Kerim UÇAR',
       photo: '/profiles/ku.jfif',
       shortName: 'KU'
@@ -185,10 +16,12 @@ const fakeMessages = [
 ];
 
 export default function AsideMessages() {
+  const router = useRouter();
+
   return (
-    <Box mt={2} px={1}>
+    <Box>
       {fakeMessages.map((item, index) => (
-        <AsideMessage key={index} data={item} />
+        <AsideMessage key={index} data={item} active={fakeMessages.findIndex(x => x.owner.id == router?.query?.id)} />
       ))}
     </Box>
   );

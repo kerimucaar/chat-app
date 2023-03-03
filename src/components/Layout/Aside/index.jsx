@@ -6,13 +6,13 @@ import styles from './Aside.module.css';
 export default function Aside() {
   return (
     <Box
+      id='aside'
       mt={12}
-      minH='full'
-      maxH='100vh'
+      minH='calc(100vh - var(--chakra-space-12))'
       maxW='sm'
+      w='full'
       overflowY='scroll'
       overflowX='hidden'
-      w='full'
       position='relative'
       zIndex={100}
       borderRight='1px solid #ffffff20'
